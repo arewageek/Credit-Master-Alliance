@@ -449,7 +449,7 @@
 							</ul>
 						</div>
 						<div class=util-visible-desktop>
-							<div><a class=bp-button href="login" title="Log in">Log in</a></div>
+							<div><a class=bp-button href="/login" title="Log in">Log in</a></div>
 							<div><a class="bp-button bg-core" href="/register" target=_blank title=Sign-up>Sign-up</a></div>
 						</div>
 						<div class=util-visible-mobile>
@@ -508,10 +508,10 @@
 										</svg>
 									</span>
 									<ul>
-										<li><a href="login">Head <small>Body</small></a>
-										<li><a href="login">Head <small>Body</small></a>
-										<li><a href="login">Head <small>Body</small></a>
-										<li><a href="login">Head <small>Body</small></a>
+										<li><a href="/login">Head <small>Body</small></a>
+										<li><a href="/login">Head <small>Body</small></a>
+										<li><a href="/login">Head <small>Body</small></a>
+										<li><a href="/login">Head <small>Body</small></a>
 									</ul>
 								
 								<li aria-expanded=false>
@@ -528,7 +528,7 @@
 							</ul>
 						</nav>
 					</div>
-					<div class=bp-offcanvas__footer><a class="bp-button bp-button--large" href="login" title="Log in">Log in</a> <a class="bp-button bp-button--large bp-button--primary" href="/register" target=_blank title=Sign-up>Sign-up</a></div>
+					<div class=bp-offcanvas__footer><a class="bp-button bp-button--large" href="/login" title="Log in">Log in</a> <a class="bp-button bp-button--large bp-button--primary" href="/register" target=_blank title=Sign-up>Sign-up</a></div>
 				</div>
 				<script>
 					function minimiseAll() {
@@ -612,7 +612,7 @@
 					<ul class="bp-offcanvas-buttons uk-nav uk-nav-default" uk-nav="">
 						<div>
 							<li><a class="uk-button uk-button-primary uk-width-1-1" href="register/">Sign-up</a></li>
-							<li class=uk-margin-small-top><a class="uk-button uk-button-secondary uk-width-1-1" href="login">Log in</a></li>
+							<li class=uk-margin-small-top><a class="uk-button uk-button-secondary uk-width-1-1" href="/login">Log in</a></li>
 						</div>
 					</ul>
 				</div>

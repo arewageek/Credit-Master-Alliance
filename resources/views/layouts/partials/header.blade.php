@@ -446,7 +446,7 @@
 							</ul>
 						</div>
 						<div class=util-visible-desktop>
-							<div><a class=bp-button href="login" title="Log in">Log in</a></div>
+							<div><a class=bp-button href="/login" title="Log in">Log in</a></div>
 							<div><a class="bp-button bg-core text-white text-sm" href="/register" target=_blank title=Sign-up>Sign-up</a></div>
 						</div>
 						<div class=util-visible-mobile>
@@ -525,7 +525,7 @@
 							</ul>
 						</nav>
 					</div>
-					<div class=bp-offcanvas__footer><a class="bp-button bp-button--large" href="login" title="Log in">Log in</a> <a class="bp-button bp-button--large bg-core text-white" href="/register" target=_blank title=Sign-up>Sign-up</a></div>
+					<div class=bp-offcanvas__footer><a class="bp-button bp-button--large" href="/login" title="Log in">Log in</a> <a class="bp-button bp-button--large bg-core text-white" href="/register" target=_blank title=Sign-up>Sign-up</a></div>
 				</div>
 				<script>
 					function minimiseAll() {
@@ -564,7 +564,7 @@
 			</header>
 			<div id=mobile-nav uk-offcanvas="overlay: true;">
 				<div class=uk-offcanvas-bar>
-					<div class=offcanvas-logo-wrapper><a class=navbar-logo href="/"><img alt="Bitpanda Logo" class=lazyload data-src="/resources/1/img/logo.png "> </a> <a class=uk-offcanvas-close type=button><span class="bp-icon bp-icon--close"></span> </a></div>
+					<div class=offcanvas-logo-wrapper><a class=navbar-logo href="/"><img alt="Logo" class=lazyload data-src="/resources/1/img/logo.png "> </a> <a class=uk-offcanvas-close type=button><span class="bp-icon bp-icon--close"></span> </a></div>
 					<ul class="uk-nav uk-nav-default" uk-nav="">
 						<li class=uk-parent>
 							<a href="/index#">Invest</a>
@@ -612,7 +612,7 @@
 					<ul class="bp-offcanvas-buttons uk-nav uk-nav-default" uk-nav="">
 						<div>
 							<li><a class="uk-button uk-button-primary uk-width-1-1 text-white" href="/register">Sign-up</a></li>
-							<li class=uk-margin-small-top><a class="uk-button uk-button-secondary uk-width-1-1" href="login">Log in</a></li>
+							<li class=uk-margin-small-top><a class="uk-button uk-button-secondary uk-width-1-1" href="/login">Log in</a></li>
 						</div>
 					</ul>
 				</div>

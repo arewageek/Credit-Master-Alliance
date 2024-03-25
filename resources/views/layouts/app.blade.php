@@ -58,18 +58,6 @@
             }
         </style>
 
-        <script>
-            const toggleNav = () => {
-                $('.nav-links').toggle(500)
-            }
-
-            const toggleInvest = () => {
-                $('.invest-sub-nav').toggle(500)
-                $('.caret .open-caret').toggle()
-                $('.caret .close-caret').toggle()
-            }
-        </script>
-
         <!-- Styles -->
         @livewireStyles
         
@@ -78,7 +66,7 @@
         
         
         <!-- Scripts -->
-        <!--@vite(['resources/css/app.css', 'resources/js/app.js'])-->
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
         
         
         <!--TAILWIND CSS CDN-->
@@ -176,39 +164,6 @@
                                             Dashboard
                                         </div>
                                     </a>
-                                    
-                                    {{-- <a href="tradinghistory" class="{{request() -> route() -> uri == 'tradinghistory' ? 'px-3 py-2 rounded-lg cursor-pointer transition-all my-3 bg-secondary-300 text-white hover:text-secondary-100 flex space-x-4 items-center' : 'px-3 py-2 rounded-lg cursor-pointer hover:bg-primary-300 transition-all my-3 hover:text-primary-100 flex items-center space-x-4'}}">
-                                        <div class="flex justify-center items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
-                                                <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
-                                            </svg>
-                                        </div>
-                                        <div class="flex items-center nav-hidden">
-                                            Profit Record
-                                        </div>
-                                    </a> --}}
-
-                                    <a href="fund" class="{{request() -> route() -> uri == 'fund' ? 'transition-all my-3 bg-secondary-300 text-white hover:text-secondary-100' : 'hover:bg-primary-300 hover:text-secondary-300' }} cursor-pointer my-3 flex flex-wrap items-center w-full space-x-4 px-3 py-2 rounded-lg transition-all">
-                                        <div class="flex justify-center items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
-                                                <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
-                                            </svg>
-                                        </div>
-                                        <div class="flex items-center nav-hidden">
-                                            Fund your Account
-                                        </div>
-                                    </a>
-
-                                    <a href="withdraw" class="{{request() -> route() -> uri == 'withdraw' ? 'transition-all my-3 bg-secondary-300 text-white hover:text-secondary-100' : 'hover:bg-primary-300 hover:text-secondary-300' }} cursor-pointer my-3 flex flex-wrap items-center w-full space-x-4 px-3 py-2 rounded-lg transition-all">
-                                        <div class="flex justify-center items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
-                                                <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
-                                            </svg>
-                                        </div>
-                                        <div class="flex items-center nav-hidden">
-                                            Withdraw Funds
-                                        </div>
-                                    </a>
 
                                     <a href="/accounthistory" class="{{ request() -> route() -> uri == 'accounthistory' ? 'transition-all my-3 bg-secondary-300 text-white hover:text-secondary-100' : 'hover:bg-primary-300 hover:text-secondary-300' }} cursor-pointer my-3 flex flex-wrap items-center w-full space-x-4 px-3 py-2 rounded-lg transition-all">
                                         <div class="flex justify-center items-center">
@@ -218,80 +173,6 @@
                                         </div>
                                         <div class="flex items-center nav-hidden">
                                             Transaction History
-                                        </div>
-                                    </a>
-
-                                    {{-- <a href="/asset-balance" class="{{request() -> route() -> uri == 'asset-balance' ? 'px-3 py-2 rounded-lg cursor-pointer transition-all my-3 bg-secondary-300 text-white hover:text-secondary-100 flex space-x-4 items-center' : 'px-3 py-2 rounded-lg cursor-pointer hover:bg-primary-300 transition-all my-3 hover:text-primary-100 flex items-center space-x-4'}}">
-                                        <div class="flex justify-center items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-bitcoin" viewBox="0 0 16 16">
-                                                <path d="M5.5 13v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.5v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.084c1.992 0 3.416-1.033 3.416-2.82 0-1.502-1.007-2.323-2.186-2.44v-.088c.97-.242 1.683-.974 1.683-2.19C11.997 3.93 10.847 3 9.092 3H9V1.75a.25.25 0 0 0-.25-.25h-1a.25.25 0 0 0-.25.25V3h-.573V1.75a.25.25 0 0 0-.25-.25H5.75a.25.25 0 0 0-.25.25V3l-1.998.011a.25.25 0 0 0-.25.25v.989c0 .137.11.25.248.25l.755-.005a.75.75 0 0 1 .745.75v5.505a.75.75 0 0 1-.75.75l-.748.011a.25.25 0 0 0-.25.25v1c0 .138.112.25.25.25L5.5 13zm1.427-8.513h1.719c.906 0 1.438.498 1.438 1.312 0 .871-.575 1.362-1.877 1.362h-1.28V4.487zm0 4.051h1.84c1.137 0 1.756.58 1.756 1.524 0 .953-.626 1.45-2.158 1.45H6.927V8.539z"/>
-                                            </svg>
-                                        </div>
-                                        <div class="flex items-center nav-hidden">
-                                            Crypto Exchange
-                                        </div>
-                                    </a> --}}
-
-                                    <div class="{{ (request() -> route() -> uri == 'buy-plan') || (request() -> route() -> uri == 'myplans') ? 'transition-all my-3 bg-secondary-300 text-white hover:text-secondary-100' : 'hover:bg-primary-300 hover:text-secondary-300'}} cursor-pointer my-3 flex flex-wrap items-center w-full space-x-4 px-3 py-2 rounded-lg transition-all">
-                                        <div class="w-full flex items-center space-x-4 invest-toggler" onclick="toggleInvest()">
-                                            <div class="w-flex justify-center items-center">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
-                                                    <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
-                                                </svg>
-                                            </div>
-                                            <div class="flex items-center justify-between w-full">
-                                                <div class="w-full">
-                                                    Invest
-                                                </div>
-                                                <div class="caret w-auto">
-                                                    <div class="open-caret">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                                                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-                                                        </svg>
-                                                    </div>
-
-                                                    <div class="close-caret hidden">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
-                                                            <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="w-full pt-5 invest-sub-nav hidden">
-                                            <div class="flex flex-col space-y-3">
-                                                <a href="/buy-plan" class="py-2 px-2 hover:bg-primary-300 transition-all hover:text-primary-100 rounded-lg w-full">
-                                                    Subscribe to a Plan
-                                                </a>
-
-                                                <a href="/myplans" class="py-2 px-2 hover:bg-primary-300 transition-all hover:text-primary-100 rounded-lg w-full">
-                                                    My Investment
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <a href="/referuser" class="{{request() -> route() -> uri == 'referuser' ? 'px-3 py-2 rounded-lg cursor-pointer transition-all my-3 bg-secondary-300 text-white hover:text-secondary-100 flex space-x-4 items-center' : 'px-3 py-2 rounded-lg cursor-pointer hover:bg-primary-300 transition-all my-3 hover:text-primary-100 flex items-center space-x-4'}}">
-                                        <div class="flex justify-center items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
-                                                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
-                                            </svg>
-                                        </div>
-                                        <div class="flex items-center nav-hidden">
-                                            Refer user
-                                        </div>
-                                    </a>
-
-                                    <a href="/support" class="{{request() -> route() -> uri == 'support' ? 'px-3 py-2 rounded-lg cursor-pointer transition-all my-3 bg-secondary-300 text-white hover:text-secondary-100 flex space-x-4 items-center' : 'px-3 py-2 rounded-lg cursor-pointer hover:bg-primary-300 transition-all my-3 hover:text-primary-100 flex items-center space-x-4'}}">
-                                        <div class="flex justify-center items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                                            </svg>
-                                        </div>
-                                        <div class="flex items-center nav-hidden">
-                                            Help/Support
                                         </div>
                                     </a>
                                     
